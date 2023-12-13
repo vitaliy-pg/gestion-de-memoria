@@ -63,3 +63,5 @@ int main() {
     }
 
     WaitForSingleObject(pi.hProcess, INFINITE);
+
+    printf("Child reads: %s\n", (char*)pBuf);
