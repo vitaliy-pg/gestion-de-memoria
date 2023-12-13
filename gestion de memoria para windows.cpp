@@ -38,3 +38,9 @@ int main() {
     }
 
     strcpy((char*)pBuf, "Hello, child process!");
+
+    PROCESS_INFORMATION pi;
+    STARTUPINFO si;
+    ZeroMemory(&si, sizeof(si));
+    si.cb = sizeof(si);
+    ZeroMemory(&pi, sizeof(pi));
