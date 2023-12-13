@@ -36,3 +36,5 @@ int main() {
         CloseHandle(hMapFile);
         exit(EXIT_FAILURE);
     }
+
+    strcpy((char*)pBuf, "Hello, child process!");
