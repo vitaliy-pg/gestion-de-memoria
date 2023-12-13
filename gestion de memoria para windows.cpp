@@ -68,3 +68,6 @@ int main() {
 
     UnmapViewOfFile(pBuf);
     CloseHandle(hMapFile);
+
+    return 0;
+}
