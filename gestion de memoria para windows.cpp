@@ -61,3 +61,5 @@ int main() {
         CloseHandle(hMapFile);
         exit(EXIT_FAILURE);
     }
+
+    WaitForSingleObject(pi.hProcess, INFINITE);
