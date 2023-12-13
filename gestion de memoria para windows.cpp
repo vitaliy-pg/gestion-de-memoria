@@ -6,3 +6,5 @@
 #include <string.h>
 
 #define SIZE 4096
+
+int main() {
