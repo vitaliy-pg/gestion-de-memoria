@@ -23,3 +23,16 @@ int main() {
         perror("CreateFileMapping");
         exit(EXIT_FAILURE);
     }
+
+    pBuf = MapViewOfFile(
+            hMapFile,
+            FILE_MAP_ALL_ACCESS,
+            0,
+            0,
+            SIZE);
+
+    if (pBuf == NULL) {
+        perror("MapViewOfFile");
+        CloseHandle(hMapFile);
+        exit(EXIT_FAILURE);
+    }
