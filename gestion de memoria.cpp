@@ -32,3 +32,5 @@ int main() {
 
         return 0;
     }
+
+    //que gracioso el codigo que no esta disponible para windows y solo para opearativos basados en unix
