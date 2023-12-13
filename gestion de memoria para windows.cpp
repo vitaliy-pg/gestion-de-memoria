@@ -44,3 +44,20 @@ int main() {
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
     ZeroMemory(&pi, sizeof(pi));
+
+    if (!CreateProcess(
+            "child.exe", // Nombre del programa hijo (asegúrate de compilar el programa hijo como "child.exe")
+            NULL,
+            NULL,
+            NULL,
+            FALSE,
+            0,
+            NULL,
+            NULL,
+            &si,
+            &pi)) {
+        perror("CreateProcess");
+        UnmapViewOfFile(pBuf);
+        CloseHandle(hMapFile);
+        exit(EXIT_FAILURE);
+    }
