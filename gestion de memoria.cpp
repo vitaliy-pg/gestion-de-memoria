@@ -6,3 +6,5 @@
 #include <sys/wait.h>
 
 #define SIZE 4096
+
+int main() {
