@@ -4,3 +4,5 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
+
+#define SIZE 4096
